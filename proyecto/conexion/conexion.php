@@ -9,7 +9,7 @@
 
     public function Conexion() {
       try {
-        $this->conexion = new PDO('mysql:host=localhost; dbname=inmobiliaria', 'root', 'WebAdmyn=1024');//, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+        $this->conexion = new PDO('mysql:host=localhost; dbname=inmobiliaria', 'root', '');//, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
         $this->conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->conexion->exec("SET CHARACTER SET utf8");
       } catch(Exception $ex) {
