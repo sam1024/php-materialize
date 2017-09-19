@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botones e Iconos</title>
+    <link rel="stylesheet" href="/css/materialize/materialize.min.css">
+    <link rel="stylesheet" href="../css/materialize_icons.css">
+  </head>
+  <body>
+    <button class="btn" type="button" name="button"><i class="material-icons">send</i></button>
+    <a href="#" class="btn btn-large">Vinculo</a>
+    <a href="#" class="btn btn-floating red"><i class="material-icons">add</i></a>
+    <div class="fixed-action-btn vertical click-to-toggle"><!--click-to-toggle SE USA PARA QUE SE MUESTRE EL MENU CUANDO LE DEMOS CLICK, SI NO SE PONE ESTA CLASE
+    EL MENU SE MOSTRAR CON SOLO PONER EL PUNTERO SOBRE LE ELEMENTO, COMO EN ESTE CASO ESTAMOS USANDO UNA ETIQUETA a TENEMOS QUE QUITARLE
+    LA PROPIEDAD href A LA MISMA O PODEMOS PONERLE EL VINCULO A javascript:void(0)-->
+      <a class="btn-floating red"><i class="material-icons">mode_edit</i></a>
+      <ul>
+        <li><a href="#" class="btn-floating yellow"><i class="material-icons">perm_scan_wifi</i></a></li>
+        <li><a href="#" class="btn-floating orange"><i class="material-icons">power_settings_new</i></a></li>
+        <li><a href="#" class="btn-floating pink"><i class="material-icons">email</i></a></li>
+        <li><a href="#" class="btn-floating purple"><i class="material-icons">android</i></a></li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/materialize/materialize.min.js"></script>
+    <script type="text/javascript">
+      $(".fixed-action-btn").openFAB();
+    </script>
+  </body>
+</html>
